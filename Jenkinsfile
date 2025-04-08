@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/kireeti1234/jenkins+docker+kubernetes.git'
+                git 'https://github.com/kireeti1234/jenkins-docker-kubernetes.git'
             }
         }
 
