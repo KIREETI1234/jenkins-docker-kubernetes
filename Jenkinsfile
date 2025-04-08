@@ -8,10 +8,12 @@ pipeline {
 
     stages {
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/KIREETI1234/jenkins-docker-kubernetes.git'
+            {
+           steps {
+        git branch: 'main', url: 'https://github.com/KIREETI1234/jenkins-docker-kubernetes.git'
+    }
             }
-        }
+
 
         stage('Build Docker Image') {
             steps {
